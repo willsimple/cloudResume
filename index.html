@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edgar Marmolejos - IT Leadership Resume</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for a great look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        :root {
+            /* Using a striking, contrasting primary color */
+            --primary-color: #0ea5e9; /* Tailwind sky-500 (light blue for contrast on black) */
+            --primary-dark: #1d4ed8; /* Tailwind blue-700 (for white sections) */
+            --light-bg: #f3f4f6; /* Tailwind gray-100 */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        /* Custom scrollbar for subtle aesthetic */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--light-bg); }
+        ::-webkit-scrollbar-thumb { background: #9ca3af; /* Tailwind gray-400 */ border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #6b7280; /* Tailwind gray-500 */ }
+
+        .section-header {
+            /* Stronger visual line for modern professional look */
+            border-bottom: 3px solid;
+        }
+        
+        /* Job Title color changes based on section background */
+        .white-section .job-title {
+            color: var(--primary-dark);
+        }
+        .black-section .job-title {
+            color: var(--primary-color);
+        }
+        
+        /* Timeline dot styling changes based on section background */
+        .timeline-dot {
+            position: absolute;
+            left: -18px;
+            top: 2px;
+            width: 12px;
+            height: 12px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+        }
+        
+        .white-section .timeline-dot {
+            border: 3px solid #bfdbfe; /* blue-200 */
+        }
+        .black-section .timeline-dot {
+            border: 3px solid #075985; /* sky-800 */
+        }
+
+        /* Ensuring all links and text in the black section are light */
+        .black-section a, .black-section p, .black-section span, .black-section time, .black-section li {
+            color: #d1d5db; /* Tailwind gray-300 for readability */
+        }
+        .black-section .section-header {
+            color: #e5e7eb; /* Tailwind gray-200 */
+            border-bottom-color: var(--primary-color);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Section 1: HOME (Black Background) -->
+    <section id="home" class="black-section bg-black text-white py-16 sm:py-24 border-b-8 border-sky-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-7xl sm:text-8xl font-extrabold tracking-tight mb-4">
+                Edgar Marmolejos
+            </h1>
+            <p class="text-4xl sm:text-5xl font-light text-sky-500">
+                Master of Science in Computer Science | IT Leadership & Cloud Infrastructure
+            </p>
+            
+            <!-- Contact Info & Cloud Counter (Centered) -->
+            <div class="mt-12 flex flex-wrap justify-center text-lg text-gray-300 gap-y-4">
+                <!-- Phone -->
+                <a href="tel:347-327-8521" class="mx-4 flex items-center hover:text-sky-400 transition duration-150">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 mr-1.5 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 1.48a1 1 0 01-.542 1.218l-.946.473a10.003 10.003 0 005.474 5.474l.473-.945a1 1 0 011.218-.542l1.48.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                    </svg>
+                    (347) 327-8521
+                </a>
+                <!-- Email -->
+                <a href="mailto:edgarmarmolejos@live.com" class="mx-4 flex items-center hover:text-sky-400 transition duration-150">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 mr-1.5 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                    </svg>
+                    edgarmarmolejos@live.com
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/edgar-marmolejos-739a9948/" target="_blank" rel="noopener noreferrer" class="mx-4 flex items-center hover:text-sky-400 transition duration-150">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 mr-1.5 h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.529-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.721 7 3.235v6z"/>
+                    </svg>
+                    LinkedIn Profile
+                </a>
+            </div>
+
+            <!-- Cloud Resume Challenge Section / Visitor Counter -->
+            <div id="cloud-info" class="mt-12 mx-auto max-w-xs">
+                <div class="rounded-xl bg-gray-800 p-4 text-center border-2 border-sky-500 shadow-lg">
+                    <p class="text-sm font-semibold text-sky-500">Cloud Resume Challenge</p>
+                    <div class="mt-2">
+                        <span id="visitor-count" class="text-3xl font-bold text-white">--</span>
+                        <span class="text-sm font-medium text-gray-400 block">Total Page Views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: SUMMARY (White Background) -->
+    <section id="summary" class="white-section bg-white text-gray-900 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-header text-3xl font-bold text-gray-800 pb-3 mb-8 border-blue-700">Summary of Qualifications</h2>
+            <p class="text-gray-700 leading-relaxed text-lg">
+                A **results-driven IT leader** with a strong technical background and experience in multiple industries, including **Fintech, Government, and Law Enforcement**. Proven success in strategic planning, infrastructure maintenance (**Windows Servers, Kace SMA, WUSS**), and leading technical teams. Known for quickly adapting and driving organizational success through effective **Request Management** and project deployment.
+            </p>
+        </div>
+    </section>
+
+    <!-- Section 3: EXPERIENCE (Black Background) -->
+    <section id="experience" class="black-section bg-black text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-header text-3xl font-bold text-gray-200 pb-3 mb-8">Professional Experience</h2>
+
+            <div class="space-y-10">
+                <!-- Job 1: ETS Support Team Leader (Assistant Service Manager) -->
+                <div class="relative pb-8 group border-l pl-6 border-gray-700">
+                    <div class="absolute timeline-dot"></div>
+                    <div>
+                        <h3 class="job-title text-2xl font-extrabold">ETS Support Team Leader (Assistant Service Manager)</h3>
+                        <p class="font-medium">Navy Federal Credit Union, Vienna, VA</p>
+                        <time class="block text-sm mb-3">Nov 2023 – Present</time>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li>**Mentored and developed a team of 14 technical professionals**, focusing on skill growth and performance.</li>
+                            <li>Managed daily Request Management team operations using **ServiceNow** to align with organizational objectives and compliance.</li>
+                            <li>Generated and presented **weekly and monthly performance metrics** to senior leadership to drive process improvements.</li>
+                            <li>Directed **User Acceptance Testing (UAT)** for platform upgrades and applications, ensuring stability and quality control.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 2: Deputy Director of Information Technology -->
+                <div class="relative pb-8 group border-l pl-6 border-gray-700">
+                    <div class="absolute timeline-dot"></div>
+                    <div>
+                        <h3 class="job-title text-2xl font-extrabold">Deputy Director of Information Technology</h3>
+                        <p class="font-medium">Town Of Vienna, Vienna, VA</p>
+                        <time class="block text-sm mb-3">Jun 2021 – Nov 2023</time>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li>Strategically planned, installed, and maintained departmental communications and **IT infrastructure**.</li>
+                            <li>Managed the deployment and configuration of **Windows Servers** and facilitated data migration to new systems.</li>
+                            <li>Oversaw system updates utilizing **Kace SMA, WUSS, and Manage Engine**.</li>
+                            <li>Provided leadership to help desk staff and monitored Police Department and Town-wide helpdesk operations.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Job 3: Information Technology Coordinator -->
+                <div class="relative pb-8 group border-l pl-6 border-gray-700">
+                    <div class="absolute timeline-dot"></div>
+                    <div>
+                        <h3 class="job-title text-xl font-bold">Information Technology Coordinator</h3>
+                        <p class="font-medium">Town Of Vienna, Vienna, VA</p>
+                        <time class="block text-sm mb-3">Jun 2017 – Jun 2021</time>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li>Led **inventory and asset projects**, overseeing the complete computer lifecycle program.</li>
+                            <li>Maintained user account access and permissions through **Active Directory**.</li>
+                            <li>Provided on-site and remote Tier II User Support and led hardware/software updates.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Job 4: Tier II LAN WAN Tech / Army Leadership -->
+                <div class="relative pb-0 group border-l pl-6 border-gray-700">
+                    <div class="absolute timeline-dot"></div>
+                    <div>
+                        <h3 class="job-title text-xl font-bold">Tier II LAN WAN Tech & U.S. Army Service</h3>
+                        <p class="font-medium">Ease Technologies Inc. / U.S. Army (Various Locations)</p>
+                        <time class="block text-sm mb-3">2002 – Jun 2017 (Selected Highlights)</time>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li>Served as Junior System Administrator, providing **24/7 IT support to Fairfax County Law Enforcement Agencies**.</li>
+                            <li>Troubleshot, repaired, and deployed images for over **2000 officer computers and 1500+ Panasonic Toughbook's**.</li>
+                            <li>**U.S. Army Service (2002-2009):** Held leadership roles including Combat Patrol Team Leader, demonstrating operational planning and personnel management skills.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 4: CORE COMPETENCIES (White Background) -->
+    <section id="competencies" class="white-section bg-white text-gray-900 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-header text-3xl font-bold text-gray-800 pb-3 mb-8 border-blue-700">Core Competencies</h2>
+            <div class="flex flex-wrap gap-3">
+                <!-- Technical Skills Badges reflecting management focus -->
+                <span class="bg-blue-100 text-blue-800 text-lg font-medium px-4 py-1.5 rounded-full shadow-md">IT Service Management (ITSM)</span>
+                <span class="bg-blue-100 text-blue-800 text-lg font-medium px-4 py-1.5 rounded-full shadow-md">Team Leadership & Mentorship</span>
+                <span class="bg-green-100 text-green-800 text-lg font-medium px-4 py-1.5 rounded-full shadow-md">ServiceNow</span>
+                <span class="bg-green-100 text-green-800 text-lg font-medium px-4 py-1.5 rounded-full shadow-md">Windows Server & Active Directory</span>
+                <span class="bg-red-100 text-red-800 text-lg font-medium px-4 py-1.5 rounded-full shadow-md">Kace SMA, WUSS, Manage Engine</span>
+                <span class="bg-red-100 text-red-800 text-lg font-medium px-4 py-1.5 rounded-full shadow-md">UAT / Deployment Projects</span>
+                <span class="bg-yellow-100 text-yellow-800 text-lg font-medium px-4 py-1.5 rounded-full shadow-md">Data Migration & Infrastructure Maint.</span>
+                <span class="bg-yellow-100 text-yellow-800 text-lg font-medium px-4 py-1.5 rounded-full shadow-md">Incident Management</span>
+                <span class="bg-blue-100 text-blue-800 text-lg font-medium px-4 py-1.5 rounded-full shadow-md">24/7 Support Operations</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: EDUCATION (Black Background) -->
+    <section id="education" class="black-section bg-black text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-header text-3xl font-bold text-gray-200 pb-3 mb-8">Education</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div>
+                    <div class="mb-4">
+                        <p class="font-bold text-2xl">Master of Science in Computer Science</p>
+                        <p class="text-lg">Monroe College, Bronx, NY</p>
+                        <p class="text-sm mt-1">2022 | GPA: 3.53</p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-gray-700">
+                        <p class="font-semibold text-xl">Bachelor of Business Administration (BBA) in IT</p>
+                        <p class="text-lg">Monroe College, Bronx, NY</p>
+                        <p class="text-sm mt-1">2013 | GPA: 3.53</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <p class="font-semibold text-xl mb-2">Certification</p>
+                    <p>New Horizon: Windows Server 2016 (Installation, Storage, and Compute)</p>
+                    
+                    <p class="font-semibold text-xl mt-6 mb-2">Military Training</p>
+                    <ul class="list-disc list-inside space-y-1 ml-4">
+                        <li>U.S. Army Non-Commissioned Officer Academy, Ft. Drum, NY (2009)</li>
+                        <li>U.S. Army CBRNE Academy, Fort Leonard Wood, MO (2002)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- FOOTER / CHALLENGE CALLOUT -->
+            <footer class="mt-12 pt-8 border-t border-gray-700 text-center">
+                <p class="text-sm text-gray-400">
+                    This dynamic resume is built as part of the **Cloud Resume Challenge**, demonstrating expertise in modern front-end design (HTML/Tailwind CSS), and Serverless integration (JavaScript Counter coming soon).
+                </p>
+            </footer>
+        </div>
+    </section>
+    
+    <!-- JAVASCRIPT SECTION -->
+    <script>
+        // Use this section later to add your JavaScript logic for the Cloud Resume Challenge!
+        // This is where you will fetch the visitor count from your API.
+        
+        const visitorCountElement = document.getElementById('visitor-count');
+        
+        // Placeholder function (replace with your actual API call)
+        async function updateVisitorCount() {
+            try {
+                // *** 1. API Endpoint for Visitor Counter ***
+                // const response = await fetch('YOUR_AZURE_FUNCTION_URL');
+                // const data = await response.json();
+                
+                // For now, let's use a dummy count:
+                const count = 101; 
+                
+                visitorCountElement.textContent = count.toLocaleString();
+            } catch (error) {
+                console.error("Error fetching visitor count:", error);
+                visitorCountElement.textContent = 'Err';
+            }
+        }
+
+        // updateVisitorCount(); // Uncomment this when you add your API call
+        
+        // Initial dummy load for visual effect
+        window.onload = function() {
+            visitorCountElement.textContent = '1';
+            // Placeholder: Replace this with your actual updateVisitorCount call after implementing the backend
+            // To see the dummy load uncomment this: 
+            // setTimeout(() => visitorCountElement.textContent = '101', 500);
+        }
+    </script>
+</body>
+</html>
